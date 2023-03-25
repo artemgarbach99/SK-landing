@@ -62,6 +62,7 @@ button {
   cursor: pointer;
   color: inherit;
   background-color: inherit;
+  outline: none;
 }
 
 a {
@@ -378,6 +379,7 @@ body::after {
 
 .popup__title {
   margin-bottom: 1.875rem;
+  padding-right: 2.5rem;
 }
 
 .popup__checkboxes {
@@ -1250,6 +1252,7 @@ body::after {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0.625rem;
+  padding-top: 1.875rem;
 }
 
 .reviews__pagination .swiper-pagination-bullet {
@@ -1798,7 +1801,7 @@ body::after {
   }
 
   .reviews__slide {
-    min-height: 30rem;
+    min-height: 0;
   }
 
   .reviews__text {
@@ -1854,8 +1857,8 @@ body::after {
   }
 
   .popup__close {
-    top: 1.25rem;
-    right: 1.25rem;
+    top: 1.5625rem;
+    right: 0.9375rem;
   }
 
   .popup__button {
