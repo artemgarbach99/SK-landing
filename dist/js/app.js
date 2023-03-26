@@ -4372,6 +4372,13 @@
         };
         const da = new DynamicAdapt("max");
         da.init();
+        const removeMenuOpen = document.querySelectorAll(".menu__link");
+        removeMenuOpen.forEach((function(element) {
+            element.addEventListener("click", (function() {
+                document.documentElement.classList.remove("menu-open");
+                document.documentElement.classList.remove("lock");
+            }));
+        }));
         window["FLS"] = true;
         isWebp();
         menuInit();
